@@ -6,20 +6,17 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 17:29:36 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/16 17:30:39 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/17 15:40:19 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char *digit)
+int	ft_isdigit(char digit)
 {
-	int	i;
-
-	i = 0;
-	while (digit[i] != '\0')
+	while (digit != '\0')
 	{
-		if (!(digit[i] >= '0' && digit[i] <= '9'))
+		if (!(digit >= '0' && digit <= '9'))
 			return (0);
-		i++;
+		digit++;
 	}
 	return (1);
 }

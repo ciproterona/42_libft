@@ -7,3 +7,6 @@
 
 # Library
 **/*.a
+
+# Extras
+**/main.c

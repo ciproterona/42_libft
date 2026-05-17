@@ -6,22 +6,19 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 17:35:59 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/16 17:36:00 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/17 15:34:09 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char *alnum)
+int	ft_isalnum(char alnum)
 {
-	int	i;
-
-	i = 0;
-	while (alnum[i] != '\0')
+	while (alnum != '\0')
 	{
-		if (!((alnum[i] >= 'a' && alnum[i] <= 'z')
-				|| (alnum[i] >= 'A' && alnum[i] <= 'Z')
-				|| (alnum[i] >= '0' && alnum[i] <= '9')))
+		if (!((alnum >= 'a' && alnum <= 'z')
+				|| (alnum >= 'A' && alnum <= 'Z')
+				|| (alnum >= '0' && alnum <= '9')))
 			return (0);
-		i++;
+		alnum++;
 	}
 	return (1);
 }
