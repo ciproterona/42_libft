@@ -1,0 +1,9 @@
+# Binaries
+**/*.out
+**/*.exe
+
+# Objects
+**/*.o
+
+# Library
+**/*.a
