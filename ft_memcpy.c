@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/16 21:12:34 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/17 15:44:55 by eroque-d         ###   ########.fr       */
+/*   Created: 2026/05/17 15:36:07 by eroque-d          #+#    #+#             */
+/*   Updated: 2026/05/17 15:36:09 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <unistd.h>
 
-# include <stddef.h>
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	size_t				index;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-int		ft_isalpha(int alpha);
-int		ft_isalnum(int alnum);
-int		ft_isdigit(int digit);
-int		ft_isprint(int c_isacii);
-int		ft_isascii(int c_isascii);
-size_t	ft_strlen(const char *str);
-void	*ft_memset(void *s, int c, size_t n);
-int		ft_atoi(const char *str);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
-
-#endif
+	index = 0;
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	while (index < n)
+	{
+		d[index] = s[index];
+		index++;
+	}
+	return (dest);
+}
