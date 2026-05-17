@@ -6,16 +6,18 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 21:01:33 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/16 21:01:35 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/17 15:28:49 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
-{
-    int len;
+#include <stddef.h>
 
-    len = 0;
-    while (str[len] != '\0')
-        len++;
-    return (len);
+size_t	ft_strlen(char *str)
+{
+	int	len;
+
+	len = 0;
+	while (str[len] != '\0')
+		len++;
+	return (len);
 }
