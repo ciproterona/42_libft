@@ -24,6 +24,9 @@ recreate some standard C library functions from scratch. Quite challenging, huh?
 | ft_isprint | Checks if a character is printable. Return `0` or `1`  | [Open](./ft_isprint.c) |
 | ft_strlen | Returns the length of a string. Return an integer | [Open](./ft_strlen.c) |
 | ft_memset | Fills memory with a constant byte. Return an `void *` | [Open](./ft_memset.c) |
+| ft_memcpy | Copies a number of bytes from one memory region to another. Return an `void *` | [Open](./ft_memcpy.c) |
+| ft_memmove | Copies a number of bytes from one memory region to another, but with overwrite protection. Return an `void *` | [Open](./ft_memmove.c) |
+| ft_strlcpy | Copies a string to a buffer of known size and guarantees \0 if the buffer size is greater than 0. Return an `size_t` | [Open](./ft_strlcpy.c) |
 | ft_bzero | Sets a block of memory to zero. Return an `void *` | [Open](./ft_bzero.c) |
 
 > Still under construction... wait for more :)
