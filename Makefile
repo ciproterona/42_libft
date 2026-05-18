@@ -6,7 +6,7 @@
 #    By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/16 21:09:36 by eroque-d          #+#    #+#              #
-#    Updated: 2026/05/17 15:49:22 by eroque-d         ###   ########.fr        #
+#    Updated: 2026/05/18 17:13:19 by eroque-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,8 @@ CFILES =	ft_isalpha.c \
 			ft_memset.c \
 			ft_bzero.c \
 			ft_memcpy.c \
+			ft_memmove.c \
+			ft_strlcpy.c \
 			ft_atoi.c
 
 OFILES = $(CFILES:.c=.o)
