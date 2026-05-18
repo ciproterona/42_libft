@@ -6,11 +6,11 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 17:29:36 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/17 15:40:19 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/18 17:49:51 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char digit)
+int	ft_isdigit(int digit)
 {
 	while (digit != '\0')
 	{
