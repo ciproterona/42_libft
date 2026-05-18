@@ -6,11 +6,11 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 20:33:29 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/17 15:38:41 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/18 17:40:01 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c_ascii)
+int	ft_isascii(int c_ascii)
 {
 	while (c_ascii != '\0')
 	{

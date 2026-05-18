@@ -6,11 +6,11 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 17:35:59 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/17 15:34:09 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/18 17:48:11 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char alnum)
+int	ft_isalnum(int alnum)
 {
 	while (alnum != '\0')
 	{
