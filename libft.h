@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 21:12:34 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/19 16:06:48 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/19 16:51:43 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 int     ft_toupper(int c);
 int     ft_tolower(int c);
+char	*ft_strchr(const char *str, int to_find);
+char	*ft_strrchr(const char *str, int to_find);
 int		ft_atoi(const char *str);
 
 #endif
