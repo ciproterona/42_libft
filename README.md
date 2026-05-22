@@ -29,6 +29,8 @@ recreate some standard C library functions from scratch. Quite challenging, huh?
 | ft_strlcpy | Copies a string to a buffer of known size and guarantees \0 if the buffer size is greater than 0. Return an `size_t` | [Open](./ft_strlcpy.c) |
 | ft_toupper | Converts a character to uppercase. Return an `int` | [Open](./ft_toupper.c) |
 | ft_tolower | Converts a character to lowercase. Return an `int` | [Open](./ft_tolower.c) |
+| ft_strchr | Search for a character within a string, searching from beginning to end. Return an `char *` | [Open](./ft_strchr.c) |
+| ft_strrchr | Search for a character within a string, searching from end to beginning. Return an `char *` | [Open](./ft_strrchr.c) |
 | ft_bzero | Sets a block of memory to zero. Return an `void *` | [Open](./ft_bzero.c) |
 
 > Still under construction... wait for more :)
