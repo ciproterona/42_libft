@@ -86,7 +86,7 @@ AI was used in this project solely for the following purposes:
 
 | Event | Date |
 |---|---|
-| Started the `libft` lists | `2026/06/15` |
+| Started the `libft` lists | `2026/05/15` |
 | Last list completed | `N/A` |
 
 ---
