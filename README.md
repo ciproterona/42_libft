@@ -34,6 +34,7 @@ recreate some standard C library functions from scratch. Quite challenging, huh?
 | ft_strncmp | Compares two strings and returns the difference between them in an unsigned char. Return an `int` | [Open](./ft_strncmp.c) |
 | ft_memchr | Search for a character within a string and returns its memory address. Return an `void *` | [Open](./ft_memchr.c) |
 | ft_memcmp | Compares two blocks of memory, byte by byte, up to a limit of `n` bytes. Return an `int` | [Open](./ft_memcmp.c) |
+| ft_strnstr | Search for a smaller string within a larger string, with a limit of `n`. Return an `char *` | [Open](./ft_strnstr.c) |
 | ft_bzero | Sets a block of memory to zero. Return an `void *` | [Open](./ft_bzero.c) |
 
 > Still under construction... wait for more :)
