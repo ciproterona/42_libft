@@ -36,6 +36,7 @@ recreate some standard C library functions from scratch. Quite challenging, huh?
 | ft_memcmp | Compares two blocks of memory, byte by byte, up to a limit of `n` bytes. Return an `int` | [Open](./ft_memcmp.c) |
 | ft_strnstr | Search for a smaller string within a larger string, with a limit of `n`. Return an `char *` | [Open](./ft_strnstr.c) |
 | ft_bzero | Sets a block of memory to zero. Return an `void *` | [Open](./ft_bzero.c) |
+| ft_calloc | Dynamically allocates `size` amounts in already cleared memory using [ft_bzero](./ft_bzero.c). Return an `void *` | [Open](./ft_calloc.c) |
 
 > Still under construction... wait for more :)
 
