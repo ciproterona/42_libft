@@ -31,6 +31,8 @@ recreate some standard C library functions from scratch. Quite challenging, huh?
 | ft_tolower | Converts a character to lowercase. Return an `int` | [Open](./ft_tolower.c) |
 | ft_strchr | Search for a character within a string, searching from beginning to end. Return an `char *` | [Open](./ft_strchr.c) |
 | ft_strrchr | Search for a character within a string, searching from end to beginning. Return an `char *` | [Open](./ft_strrchr.c) |
+| ft_strncmp | Compares two strings and returns the difference between them in an unsigned char. Return an `int` | [Open](./ft_strncmp.c) |
+| ft_memchr | Search for a character within a string and returns its memory address. Return an `void *` | [Open](./ft_memchr.c) |
 | ft_bzero | Sets a block of memory to zero. Return an `void *` | [Open](./ft_bzero.c) |
 
 > Still under construction... wait for more :)
