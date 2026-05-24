@@ -6,7 +6,7 @@
 #    By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/16 21:09:36 by eroque-d          #+#    #+#              #
-#    Updated: 2026/05/23 18:51:29 by eroque-d         ###   ########.fr        #
+#    Updated: 2026/05/23 21:56:04 by eroque-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,8 @@ CFILES =	ft_isalpha.c \
 			ft_strnstr.c \
 			ft_atoi.c \
 			ft_calloc.c \
-			ft_strdup.c
+			ft_strdup.c \
+			ft_substr.c
 
 OFILES = $(CFILES:.c=.o)
 
