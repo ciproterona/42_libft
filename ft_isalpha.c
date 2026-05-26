@@ -6,18 +6,14 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 16:54:09 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/18 17:46:30 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/26 18:24:11 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int letter)
 {
-	while (letter != '\0')
-	{
-		if (!((letter >= 'a' && letter <= 'z')
-				|| (letter >= 'A' && letter <= 'Z')))
-			return (0);
-		letter++;
-	}
+	if (!((letter >= 'a' && letter <= 'z')
+			|| (letter >= 'A' && letter <= 'Z')))
+		return (0);
 	return (1);
 }

@@ -6,17 +6,13 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 17:29:36 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/18 17:49:51 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/26 18:23:38 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int digit)
 {
-	while (digit != '\0')
-	{
-		if (!(digit >= '0' && digit <= '9'))
-			return (0);
-		digit++;
-	}
+	if (!(digit >= '0' && digit <= '9'))
+		return (0);
 	return (1);
 }
