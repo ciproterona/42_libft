@@ -6,17 +6,13 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 20:33:29 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/18 17:40:01 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/26 18:23:58 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c_ascii)
 {
-	while (c_ascii != '\0')
-	{
-		if (!(c_ascii >= 0 && c_ascii <= 127))
-			return (0);
-		c_ascii++;
-	}
+	if (!(c_ascii >= 0 && c_ascii <= 127))
+		return (0);
 	return (1);
 }
