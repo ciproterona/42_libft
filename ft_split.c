@@ -1,0 +1,86 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/26 13:31:36 by eroque-d          #+#    #+#             */
+/*   Updated: 2026/05/29 17:21:38 by eroque-d         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdlib.h>
+#include "libft.h"
+
+static int	count_words(char const *s, char c)
+{
+	int	count;
+	int	i;
+
+	count = 0;
+	i = 0;
+	while (s[i])
+	{
+		while (s[i] == c)
+			i++;
+		if (s[i])
+		{
+			count++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
+	}
+	return (count);
+}
+
+static void	*free_all(char **matrix, int j)
+{
+	while (j > 0)
+	{
+		free(matrix[--j]);
+	}
+	free(matrix);
+	return (NULL);
+}
+
+static char	**ft_allocate_words(char const *s, char c, char **matrix)
+{
+	int	i;
+	int	j;
+	int	start;
+
+	i = 0;
+	j = 0;
+	while (s[i])
+	{
+		while (s[i] == c)
+			i++;
+		if (s[i])
+		{
+			start = i;
+			while (s[i] && s[i] != c)
+				i++;
+			matrix[j] = ft_substr(s, start, i - start);
+			if (!matrix[j])
+				return (free_all(matrix, j));
+			j++;
+		}
+	}
+	matrix[j] = NULL;
+	return (matrix);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**matrix;
+	int		words;
+
+	if (!s)
+		return (NULL);
+	words = count_words(s, c);
+	matrix = malloc(sizeof(char *) * (words + 1));
+	if (!matrix)
+		return (NULL);
+	return (ft_allocate_words(s, c, matrix));
+}
