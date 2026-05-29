@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c_ascii)
+int	ft_isascii(int ascii)
 {
-	if (!(c_ascii >= 0 && c_ascii <= 127))
+	if (!(ascii >= 0 && ascii <= 127))
 		return (0);
 	return (1);
 }
