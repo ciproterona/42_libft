@@ -6,14 +6,13 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 20:43:57 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/16 20:58:36 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/05/29 16:07:15 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c_ascii)
+int	ft_isprint(int ascii)
 {
-	if (!(c_ascii >= 32 && c_ascii <= 127))
+	if (!(ascii >= 32 && ascii <= 126))
 		return (0);
-	c_ascii++;
 	return (1);
 }
