@@ -6,7 +6,7 @@
 #    By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/16 21:09:36 by eroque-d          #+#    #+#              #
-#    Updated: 2026/05/26 16:18:27 by eroque-d         ###   ########.fr        #
+#    Updated: 2026/05/31 14:10:51 by eroque-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ CFILES =	ft_isalpha.c	\
 			ft_memcpy.c		\
 			ft_memmove.c 	\
 			ft_strlcpy.c 	\
+			ft_strlcat.c	\
 			ft_toupper.c 	\
 			ft_tolower.c 	\
 			ft_strchr.c 	\
@@ -37,7 +38,8 @@ CFILES =	ft_isalpha.c	\
 			ft_substr.c 	\
 			ft_strjoin.c 	\
 			ft_strtrim.c 	\
-			ft_split.c
+			ft_split.c		\
+			ft_itoa.c
 
 OFILES = $(CFILES:.c=.o)
 
