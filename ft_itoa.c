@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/31 14:15:41 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/31 15:36:29 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/01 15:03:11 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_itoa(int n)
 
 	nbr = n;
 	len = get_num_len(n);
-	str = (char *)malloc(sizeof(char) * (len + 1));
+	str = malloc(sizeof(*str) * (len + 1));
 	if (!str)
 		return (NULL);
 	str[len] = '\0';
