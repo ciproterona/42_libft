@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 14:06:21 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/02 14:21:13 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/02 14:38:40 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,4 @@ void	ft_putnbr_fd(int n, int fd)
 	if (nb >= 10)
 		ft_putnbr_fd(nb / 10, fd);
 	ft_putchar_fd((nb % 10) + '0', fd);
-}
-
-int	main(void)
-{
-	ft_putnbr_fd(-1234, 1);
 }
