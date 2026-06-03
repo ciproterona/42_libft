@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 16:51:29 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/19 16:56:40 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:30:38 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strrchr(const char *str, int to_find)
 {
 	int	size;
 
+	if (!str)
+		return (NULL);
 	size = ft_strlen(str);
 	while (size >= 0)
 	{

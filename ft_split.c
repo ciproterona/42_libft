@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 13:31:36 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/29 17:21:38 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:02:07 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ static int	count_words(char const *s, char c)
 	int	count;
 	int	i;
 
+	if (!s)
+		return (0);
 	count = 0;
 	i = 0;
 	while (s[i])
@@ -36,6 +38,8 @@ static int	count_words(char const *s, char c)
 
 static void	*free_all(char **matrix, int j)
 {
+	if (!matrix)
+		return (NULL);
 	while (j > 0)
 	{
 		free(matrix[--j]);
@@ -50,6 +54,8 @@ static char	**ft_allocate_words(char const *s, char c, char **matrix)
 	int	j;
 	int	start;
 
+	if (!s || !matrix)
+		return (NULL);
 	i = 0;
 	j = 0;
 	while (s[i])

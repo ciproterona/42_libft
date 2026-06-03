@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 13:45:33 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/23 13:53:02 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:17:09 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	unsigned char	*s1p;
 	unsigned char	*s2p;
 
+	if (!s1 || !s2)
+		return (0);
 	i = 0;
 	s1p = (unsigned char *)s1;
 	s2p = (unsigned char *)s2;

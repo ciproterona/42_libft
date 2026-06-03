@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 21:01:33 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/17 15:28:49 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:06:57 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlen(char *str)
 {
 	int	len;
 
+	if (!str)
+		return (0);
 	len = 0;
 	while (str[len] != '\0')
 		len++;

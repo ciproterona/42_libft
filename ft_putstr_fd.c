@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 15:36:45 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/02 14:30:37 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:14:50 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	unsigned int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 		write(fd, &s[i++], 1);

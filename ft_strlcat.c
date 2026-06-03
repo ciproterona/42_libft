@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 15:26:07 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/31 14:12:16 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:07:58 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	i;
 	size_t	j;
 
+	if (!dest || !src)
+		return (0);
 	dest_len = 0;
 	while (dest[dest_len] && dest_len < size)
 		dest_len++;
