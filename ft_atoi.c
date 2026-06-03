@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 20:40:04 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/16 20:40:06 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:18:36 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	ft_atoi(char *str)
 	int	output_int;
 	int	sign;
 
+	if (!str)
+		return (0);
 	i = 0;
 	output_int = 0;
 	sign = 1;

@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 16:42:38 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/19 16:46:53 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:09:19 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strchr(const char *str, int to_find)
 {
 	int	i;
 
+	if (!str)
+		return (NULL);
 	i = 0;
 	while (str[i] != '\0')
 	{
