@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 14:18:45 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/07/18 15:48:19 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:06:33 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 
+	if (!dest || !src)
+		return (0);
 	i = 0;
 	if (size > 0)
 	{

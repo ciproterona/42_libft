@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/17 19:13:08 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/17 22:20:01 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:15:42 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	const unsigned char	*s;
 	int					i;
 
+	if (!dest || !src)
+		return (NULL);
 	if (dest == src || n == 0)
 		return (dest);
 	d = (unsigned char *)dest;
