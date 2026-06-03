@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 15:39:37 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/02 14:29:39 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 11:21:28 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,13 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	unsigned int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
-		write(fd, &s[i++], 1);
-	s[i] = '\n';
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
+	write(fd, "\n", 1);
 }
