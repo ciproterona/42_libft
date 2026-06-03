@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 15:01:37 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/02 15:49:02 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:51:34 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;
 
-	if (!content)
-		return (NULL);
 	new_node = malloc(sizeof(*new_node));
 	if (!new_node)
 		return (NULL);
