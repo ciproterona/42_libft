@@ -6,11 +6,13 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 20:40:04 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/03 14:18:36 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:23:41 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	output_int;
@@ -28,7 +30,7 @@ int	ft_atoi(char *str)
 		if (str[i++] == '-')
 			sign *= -1;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (ft_isdigit(str[i]))
 	{
 		output_int = output_int * 10 + (str[i] - '0');
 		i++;
