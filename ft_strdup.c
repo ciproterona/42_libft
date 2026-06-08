@@ -6,11 +6,10 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 17:04:10 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/03 14:08:08 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:42:11 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)

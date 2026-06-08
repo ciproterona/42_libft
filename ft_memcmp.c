@@ -6,11 +6,11 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 13:45:33 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/03 14:17:09 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:40:53 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

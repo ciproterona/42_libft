@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 21:12:34 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/03 11:08:41 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:39:29 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include <stdlib.h>
+# include <stdint.h>
 # include <unistd.h>
 
 typedef struct s_list
