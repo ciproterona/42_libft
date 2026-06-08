@@ -6,11 +6,11 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 21:01:33 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/03 14:06:57 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:42:47 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(char *str)
 {

@@ -6,11 +6,10 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 20:24:54 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/23 22:05:39 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:43:18 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

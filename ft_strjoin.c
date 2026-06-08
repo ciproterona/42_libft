@@ -6,11 +6,10 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/24 17:59:56 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/24 18:25:18 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:42:29 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

@@ -6,11 +6,11 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 16:42:38 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/03 14:09:19 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:41:51 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int to_find)
 {

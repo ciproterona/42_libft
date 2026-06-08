@@ -6,11 +6,11 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/31 14:15:41 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/01 15:03:11 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:39:20 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	get_num_len(int n)
 {

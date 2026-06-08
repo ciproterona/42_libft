@@ -6,11 +6,10 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 15:01:17 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/05/25 15:43:44 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:43:46 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
