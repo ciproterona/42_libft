@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/17 15:36:07 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/08 11:41:14 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 16:14:26 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	index = 0;
 	d = (unsigned char *)dest;
