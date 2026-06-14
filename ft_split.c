@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 13:31:36 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/08 11:41:44 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 17:38:43 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static void	*free_all(char **matrix, int j)
 	return (NULL);
 }
 
-static char	**ft_allocate_words(char const *s, char c, char **matrix)
+static char	**allocate_words(char const *s, char c, char **matrix)
 {
 	int	i;
 	int	j;
@@ -87,5 +87,5 @@ char	**ft_split(char const *s, char c)
 	matrix = malloc(sizeof(char *) * (words + 1));
 	if (!matrix)
 		return (NULL);
-	return (ft_allocate_words(s, c, matrix));
+	return (allocate_words(s, c, matrix));
 }

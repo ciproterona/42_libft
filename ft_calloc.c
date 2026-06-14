@@ -6,7 +6,7 @@
 /*   By: eroque-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/23 15:55:19 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/06/08 11:38:48 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 17:38:13 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	size_t	total;
-	void	*malloc_size;
+	void	*ptr;
 
 	if (size > 0 && count > (SIZE_MAX / size))
 		return (NULL);
 	total = count * size;
-	malloc_size = malloc(total);
-	if (malloc_size == NULL)
+	ptr = malloc(total);
+	if (ptr == NULL)
 		return (NULL);
-	ft_bzero(malloc_size, total);
-	return (malloc_size);
+	ft_bzero(ptr, total);
+	return (ptr);
 }
