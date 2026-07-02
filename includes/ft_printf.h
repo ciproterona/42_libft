@@ -6,7 +6,7 @@
 /*   By: eroque-d <eroque-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 18:55:35 by eroque-d          #+#    #+#             */
-/*   Updated: 2026/07/02 12:21:17 by eroque-d         ###   ########.fr       */
+/*   Updated: 2026/07/02 13:09:22 by eroque-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,6 @@
 # define FT_PRINTF_H
 
 # include "libft.h"
-
-typedef void		(*t_format_fn)(va_list, int *);
-
-typedef struct s_printf
-{
-	t_format_fn	table[256];
-}	t_printf;
 
 int		ft_printf(const char *fmt, ...);
 
